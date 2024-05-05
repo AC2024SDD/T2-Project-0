@@ -1,2 +1,12 @@
-scope
-specs
+# Specs
+- Playable Wordle game
+- Build as flask web app
+- Load in a word list, filtered for numbers of letters (csv)
+- Allow users to choose word lengths
+- Way of showing if its correct, close, or wrong
+- (Optional) Shows keyboard with used letters and found letters
+- (Optional) Track user specs
+
+# Scope
+- Login is outside of project scope
+- Mobile app is outside project scope
