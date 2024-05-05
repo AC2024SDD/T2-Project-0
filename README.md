@@ -19,6 +19,7 @@ Create the following diagrams and upload them into the 'Planning' folder.
 |Task|Person Assigned|
 |----|----|
 |Scope|All|
-Context Diagram|Lochlan|
+Nothing |Lochlan|
+Everything else|Everyone else
 
 Your goal is to write your planning documentation so well that anyone could pick up your work and continue it.
