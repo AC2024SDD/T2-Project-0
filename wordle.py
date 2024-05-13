@@ -43,14 +43,6 @@ words_array = [
 ]
 
 
-
-
-
-  
-
-def wordle():
-    pass
-
 def generate_word():
     random_number = random.randint(0, len(words_array) - 1)
     word = words_array[random_number]
