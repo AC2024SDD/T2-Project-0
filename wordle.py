@@ -124,4 +124,5 @@ def play():
         except:
             pass
 
-play()
+if __name__ == '__main__':
+    play()
