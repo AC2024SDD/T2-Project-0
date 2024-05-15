@@ -20,6 +20,7 @@ Create the following diagrams and upload them into the 'Planning' folder.
 |----|----|
 |Scope|All|
 Nothing |Lochlan|
+Nothing|Mr Kelly|
 Everything else|Everyone else
 
 Your goal is to write your planning documentation so well that anyone could pick up your work and continue it.
