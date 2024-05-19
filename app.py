@@ -7,13 +7,13 @@ def index():
     return render_template("home.html")
 
 # This route is the 'about' page
-@app.route("/about")
+@app.route("/add_expense")
 def about():
-    return render_template("about.html")
+    return render_template("add_expense.html")
 
-@app.route("/contact")
+@app.route("/view_total")
 def contact():
-    return render_template("contact.html")
+    return render_template("view_total.html")
 
 # Here's how you create a route
 # @app.route("/routeName")
