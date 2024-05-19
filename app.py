@@ -7,13 +7,9 @@ from wordle import *
 def index():
     return render_template("home.html")
 
-@app.route("/about")
-def about():
-    return render_template("about.html")
-
-@app.route("/contact")
+@app.route("/wordle")
 def contact():
-    return render_template("contact.html")
+    return render_template("wordle.html")
 
 # Here's how you create a route
 # @app.route("/routeName")
