@@ -43,6 +43,7 @@ words_array = [
 ]
 
 
+
 def generate_word():
     random_number = random.randint(0, len(words_array) - 1)
     word = words_array[random_number]
@@ -57,6 +58,10 @@ def generate_word():
     # Pulls a word from massive array
     return word
 
+def test_generate_word():
+    assert type(generate_word() ) == str, "Method returned datatype other that str"
+    assert isinstance(generate_word(), str), "Method returned datatype other that str"
+    assert len(generate_word()) == 5, "Word returned was not 5 letters"
 
 class Letter():
     def __init__(self, letter):
@@ -124,4 +129,6 @@ def play():
         except:
             pass
 
-play()
+if __name__ == '__main__':
+    test()
+    #play()
