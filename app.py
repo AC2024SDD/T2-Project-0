@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
 from wordle import *
@@ -10,7 +10,8 @@ def index():
 @app.route("/wordle", methods=["POST", "GET"])
 def wordle():
     if request.method == "POST":
-        __guess = request.form.get(guess)
+        guess = request.form.get('guess')
+        print(guess)
     return render_template("wordle.html")
 
 # Here's how you create a route
