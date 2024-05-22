@@ -1,8 +1,9 @@
 {% extends 'layout.html' %}
 
 {% block body %} 
-  <!-- Home HTML Goes Here -->
-  <h1>Home</h1>
+  <h1>Expense tracker</h1>
   <p>Welcome Home!</p>
+  
+  <button onclick="location.href='/add_expense'">Add Expense</button>
+  <button onclick="location.href='/viewtotal'">View Total</button>
 {% endblock %}
-
