@@ -1,0 +1,15 @@
+SCOPE AND SPECS
+
+The user needs to be able to add new tasks, and while adding tasks they need to be able to set priority and a deadline. 
+The users should also be able to edit their tasks after they have published it, when editing they should have all the same functionality as when adding a new task. 
+Users must be able to mark tasks as completed. And we must allow users to use a text pen(drawing characters that will turn into text). 
+All tasks should be stored internally on the device.
+
+It would also be good, to allow users to receive notifications when a deadline is coming up. And allow users to drag tasks for priority, instead of relying on the editing page. Also, allowing users to use speech to text would be beneficial in increasing our user base.
+
+
+Social and Ethical considerations
+It is important that all users are able to comfortably use our to do list.
+Hence, in the settings, there will be a high contrast mode, highlighting all the users texts.  
+And we will implement users being able to use a text pen or speech to text to allow all users to write lists. 
+All lists should be stored internally on the user's device, to ensure the privacy of the files.
