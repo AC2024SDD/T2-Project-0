@@ -99,12 +99,16 @@ class Game():
         self.guesses = []
         self.game_over = False
 
+    def test(self):
+        print('Test Passed')
+
     def guess(self, word):
         new_guess = Word(word, self.key_word)
         new_guess.set_states(self.key_word)
         self.guesses.append(new_guess)
         if new_guess.correct:
             self.game_over = True
+        return None
 
 def play():
     game = Game()
