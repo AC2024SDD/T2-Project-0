@@ -9,6 +9,7 @@ def index():
 
 @app.route("/wordle")
 def contact():
+    print('Guess')
     return render_template("wordle.html")
 
 # Here's how you create a route
@@ -17,4 +18,4 @@ def contact():
 #    return render_template("fileName.html")
 
 if __name__ == "__main__":
-    app.run(debug=True,host='0.0.0.0', port=4000)
+    app.run(debug=True)
