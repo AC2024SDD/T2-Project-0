@@ -1,16 +1,31 @@
-{% extends 'layout.html' %}
+{% extends "layout.html" %}
 
-{% block body %} 
+{% block title %}Add Expense - Expense Tracker{% endblock %}
+
+{% block content %}
   <!-- Add_Expense HTML Goes Here -->
-<h1>Add Expense !!</h1>
-<p>TODO</p>
 
-
-<div class="container">
-<input type="text" placeholder="Enter Expense" name="expense" required>
-
-<input type="real" placeholder="Enter Cost" name="Cost" required>
-
-<input type="submit" value="Login">
-
+<head> 
+  <title>Add Expense</title> 
+</head> 
+<body> 
+    <h1>Add A New Expense</h1> 
+    <form method="post" action="/add_expense">
+      <label for="expense">Expense:</label>
+      <input type="text" id="expense" name="expense" required>
+      <br>
+      <label for="cost">Cost:</label>
+      <input type="text" id="cost" name="cost" required>
+      <br>
+      <button type="submit">Add Expense</button>
+   </form>
+   <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Username</span>
+    <input type="text" class="form-control" placeholder="E.g. QuintenKruges54" aria-label="username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Password</span>
+    <input type="text" class="form-control" placeholder="E.g. Big Bananas" aria-label="password" aria-describedby="basic-addon1">
+  </div>
+</body> 
 {% endblock %}
