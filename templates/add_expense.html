@@ -1,16 +1,16 @@
 {% extends 'layout.html' %}
 
-{% block body %} 
-  <!-- Add_Expense HTML Goes Here -->
-<h1>Add Expense !!</h1>
-<p>TODO</p>
-
-
-<div class="container">
-<input type="text" placeholder="Enter Expense" name="expense" required>
-
-<input type="real" placeholder="Enter Cost" name="Cost" required>
-
-<input type="submit" value="Login">
-
+{% block content %}
+  <h1>Add Expense</h1>
+  <div class="container">
+    <form action="/add_expense" method="post">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Enter Expense" name="expense" required>
+      </div>
+      <div class="mb-3">
+        <input type="number" step="0.01" class="form-control" placeholder="Enter Cost" name="cost" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Expense</button>
+    </form>
+  </div>
 {% endblock %}
