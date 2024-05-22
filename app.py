@@ -11,6 +11,7 @@ def index():
 def wordle():
     if request.method == "POST":
         __guess = request.form.get(guess)
+    print(__guess)
     return render_template("wordle.html")
 
 # Here's how you create a route
