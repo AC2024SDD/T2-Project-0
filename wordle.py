@@ -42,8 +42,6 @@ words_array = [
     "tango", "ultra", "vibes", "wager", "xylon", "young", "zesty"
 ]
 
-
-
 def generate_word():
     random_number = random.randint(0, len(words_array) - 1)
     word = words_array[random_number]
