@@ -1,5 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %} 
+<b><table>
+{% for guess in guesses %}
+<tr>
+  {% for letter in guess.letters %}
+    {% if letter.state == 'Correct' %} 
+    <td class="text-success"> {{ letter.letter }} </td>
+    {% elif letter.state == 'Misplaced' %}
+    <td class="text-secondary"> {{ letter.letter }} </td>
+    {% elif letter.state == 'Wrong' %}
+    <td class="text-danger"> {{ letter.letter }} </td>
+    {% endif %}
+  {% endfor %}
+</tr>
+{% endfor %}
+</table></b>
+
 <form action="/wordle" method="post">
   <label for="guess">enter your guess:</label><br>
   <input type="text" id="guess" name="guess">
   <input type="submit">
 </form>
+<p></p>
+{% endblock %}

@@ -75,7 +75,6 @@ class Word():
         if key_word:
             self.set_states(key_word)
         self.correct = self.check_correct()
-
     
     def set_states(self, key_word):
         count = 0

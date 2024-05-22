@@ -19,7 +19,7 @@ def wordle():
         game = Game()
     if request.method == "POST":
         guess = request.form.get('guess').lower()
-        game.guess('guess')
+        game.guess(guess)
     return render_template("wordle.html", guesses = game.guesses)
 
 # Here's how you create a route
