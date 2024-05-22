@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
+expenses = []
+
 #This is the 'homepage' route
 @app.route("/")
 def index():
@@ -8,12 +10,17 @@ def index():
 
 # This route is the 'about' page
 @app.route("/add_expense")
-def about():
+def add_expense():
+    if request.method == "POST":
+        expense = request.form["expense"]
+        cost = float(request.form["cost"])
+        expenses.append([expense, cost])
     return render_template("add_expense.html")
 
 @app.route("/view_total")
-def contact():
-    return render_template("view_total.html")
+def view_total():
+    total_cost = sum(cost for cost in expenses[1])
+    return render_template("view_total.html", total=total_cost)
 
 # Here's how you create a route
 # @app.route("/routeName")
