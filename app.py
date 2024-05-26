@@ -9,6 +9,7 @@ def index():
     return render_template("home.html")
 
 # This route is the 'about' page
+
 @app.route("/add_expense", methods=["GET", "POST"])
 def add_expense():
     if request.method == "POST":
